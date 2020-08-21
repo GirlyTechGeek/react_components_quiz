@@ -25,10 +25,10 @@ class ApprovalCard extends React.Component{
     const {props} = this.props;
     return (
        <div>
-         <p className="ui card" />
+         <p className="ui card" ></p>
          <p className="content">{this.children}</p>
-         <p className="extra content" />
-         <p className="ui two buttons" />
+         <p className="extra content"></p>
+         <p className="ui two buttons"></p>
          <p className="ui basic green button">Approve</p>
          <p className="ui basic red button">Reject</p>
       </div>
