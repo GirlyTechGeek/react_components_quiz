@@ -21,21 +21,16 @@ import React, {Component} from "react";
 
 
 class ApprovalCard extends React.Component{
-   children =() =>{
-      alert('Hi Children');
-  };
-
   render(){
     const {props} = this.props;
     return (
-      <div className="ui card">
-        <div className="content">{this.children}</div>
-        <div className="extra content">
-          <div className="ui two buttons">
-            <div className="ui basic green button">Approve</div>
-            <div className="ui basic red button">Reject</div>
-          </div>
-        </div>
+       <div>
+         <p className="ui card" />
+         <p className="content">{this.children}</p>
+         <p className="extra content" />
+         <p className="ui two buttons" />
+         <p className="ui basic green button">Approve</p>
+         <p className="ui basic red button">Reject</p>
       </div>
     );
   }
