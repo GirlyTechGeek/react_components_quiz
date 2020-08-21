@@ -26,23 +26,24 @@ class CommentDetail extends Component{
 
 
   render(){
-    const{props} = this.props;
 
     return(
-    <div className="comment">
-    <a href="/" className="avatar">
-      <img alt="avatar" src={this.props.img} />
-    </a>
-    <div className="content">
-      <a href="/" className="author">
-        {this.props.author}
-      </a>
-      <div className="metadata">
-        <span className="date">{this.props.timeAgo}</span>
-      </div>
-      <div className="text">{this.props.commentText}</div>
-    </div>
-  </div>)
+      <div>
+          <p className="comment">
+            <a href="/" className="avatar">
+            <img alt="avatar" src={this.props.img} />
+            </a>
+         <p className="content">
+            <a href="/" className="author">
+          {this.props.author}
+            </a>
+         <p className="metadata">
+           <span className="date">{this.props.timeAgo}</span>
+         </p>
+       <p className="text">{this.props.commentText}</p>
+        </p>
+       </p>
+    </div>)
   }
 }
 
